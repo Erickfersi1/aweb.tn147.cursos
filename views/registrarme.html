@@ -46,77 +46,77 @@
                 <legend> Formulario de registro</legend>
                 
                 <form action="http://127.0.0.1:5500/aweb20203tn147.cursos/RecibirDatos">
-                    <ul style="list-style: none;">
-                        <li>
-                            <label for="nombre">Nombre</label>
-                            <input name="nombre" type="text" id="nombre">
-                        </li>
-                        <li>
-                            <label for="PrimerApellido">Primer PrimerApellido</label>
-                            <input name="PrimerApellido" type="text" id="PrimerApellido">
+                  <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                            <input class="form-control" type="text" name="nombre" id="nombre">
 
-                        </li>
-                        <li>
-                            <label for="segundoapellido">Nombre</label>
-                            <input name="segundoapellido" type="text" id="segundoapellido">
-                        </li>
-                        <label for="#"> Tipo de Modalidad</label>
-                        <input type="checkbox" id="presencial" value="presencial" name="modalidad">
-                        <label for="presencial">Presencial</label>
+                  </div>
+                  <div>
+                    <label for="PrimerApellido">Primer Apellido</label>
+                            <input class="form-control" name="PrimerApellido" type="text" id="PrimerApellido">
 
-                        <input type="checkbox" id="remoto" value="remoto" name="modalidad">
-                        <label for="remoto">Remoto</label>
-                         <input type="checkbox" id="mixto" value="mixto" name="modalidad">
-                         <label for="mixto"> Mixto</label>
-                    </li>
-                    <li>
-                        <label for="#">Sexo</label>
-                        <input type="radio" name="sexo" id="nombre" value="nombre">
-                        <label for="hombre">hombre</label>
-                        <input type="radio" name="sexo" id="mujer" value="mujer">
-                        <label for="mujer">Mujer</label>
+                  </div>
+                  <div>
+                    <label for="segundoapellido">Segundo apellido</label>
+                    <input class="form-control" name="segundoapellido" type="text" id="segundoapellido">
 
-                    </li>
-                <li>
-                    <label for="curso">curso:</label>
-                    <select name="curso" id="curso">
-                        <option value="0">Seleccione..</option>
-                        <option value="1">Creatividad</option>
-                        <option value="2">Databasy System</option>
-                        <option value="3">Aplicaciones Moviles</option>
-                        <option value="4">Finanzas corporativas</option>
-
-                    </select>
-                </li>
-                <li>
-                    <label for="observaciones">Observaciones:</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="#"> Tipo de Modalidad</label>
+                    <div class="form-check">
+                      <input  class=" form-check-input" type="checkbox" id="presencial" value="presencial" name="modalidad">
+                      <label class="form-check-label" for="presencial">Presencial</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="remoto" value="remoto" name="modalidad">
+                      <label class="form-check-label"  for="remoto">Remoto</label>
+                    </div>
+                    <div class="form-check">
+                      <input  class="form-check-input" type="checkbox" id="mixto" value="mixto" name="modalidad">
+                         <label class="form-check-label" for="mixto"> Mixto</label>
+                    </div>
+                    <div class="form-group">
+                      <label for="#">Sexo</label>
+                      <div class="form-check">
+                        <input class= "form-check-input" type="radio" name="sexo" id="nombre" value="nombre">
+                        <label class=" form-check-label" for="hombre">hombre</label>
+                      </div>
+                      <div class="form-check">
+                        <input class= "form-check-input" type="radio" name="sexo" id="mujer" value="mujer">
+                        <label  class=" form-check-label" for="mujer">Mujer</label>
+                      </div>
+                    </div>
+                     <div class="form-group">
+                      <ul style="list-style: none;">
+                        <label for="curso">Curso:</label>
+                        <div>
+                          <select name="curso" id="curso">
+                            <option value="0">Seleccione..</option>
+                            <option value="1">Creatividad</option>
+                            <option value="2">Database System</option>
+                            <option value="3">Aplicaciones Moviles</option>
+                            <option value="4">Finanzas corporativas</option>
+    
+                          </select>
+                        </ul>
+                      </div>
+                      <div class="form-group">
+                        <label for="observaciones">Observaciones:</label>
                     <br>
-                    <textarea style="resize: none;" name="observaciones" id="observaciones" cols="60" rows="18"> 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque vero illo corporis eum unde inventore. Quo, illo accusantium. Molestias at explicabo quos temporibus doloremque, accusantium autem commodi dolorum nesciunt minus?
-
-                    </textarea>
-
-                </li>
-                <li>
-                    <input type="submit" value="Registrar" name="registrar" id="registrar">
+                    <textarea style="resize: none;" name="observaciones" id="observaciones" cols="60" rows="18"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque vero illo corporis eum unde inventore. Quo, illo accusantium. Molestias at explicabo quos temporibus doloremque, accusantium autem commodi dolorum nesciunt minus? </textarea>
+                      </div>
+                      <div>
+                        <input type="submit" value="Registrar" name="registrar" id="registrar">
                     <input type="reset" value="cancelar" name="reset" id="reset">
-                </li>
-
-
-
-
-                    </ul>
-                  
-
-                </form>
-              </fieldset>
-
-            </div>
-
+                      </div>
+                   </div>
+                  </div>
+                   </ul>
+                  </form>
+                </fieldset>
+              </div>
+            </div> 
           </div>
-      </div>
-
-
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
